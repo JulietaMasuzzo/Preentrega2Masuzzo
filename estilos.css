@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+.navbar{
+    background-color: rgba(233, 233, 8, 0.781);
+}
+.navbar-toggler{
+    font-size: 23px;
+}
+.nav-link:hover{
+    background-color: #3d3d3d60;
+}
