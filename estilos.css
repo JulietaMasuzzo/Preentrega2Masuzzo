@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Playpen+Sans:wght@100&display=swap');
+
+/* font-family: 'Comic Neue', cursive;
+font-family: 'Playpen Sans', cursive; */
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -8,8 +13,88 @@
     background-color: rgba(233, 233, 8, 0.781);
 }
 .navbar-toggler{
-    font-size: 23px;
+    font-size: 30px;
+    padding: 35px;
+    display: flex;
 }
 .nav-link:hover{
     background-color: #3d3d3d60;
+}
+.nav-item{
+    font-size: 25px;
+    text-align: right;
+}
+.titulo{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+  }
+.call{
+    width:100% ;
+    background-color: #00000081 ;
+    color: white;
+    padding: 30px;
+    border: 5px solid  rgba(233, 233, 8, 0.781);
+    border-radius: 10px;
+  }
+.call a:hover{
+    background-color: #333;
+  }
+.call p{
+    margin-bottom: 20px;
+  }
+.boton{
+    background-color: rgba(233, 233, 8, 0.781);
+    color: white;
+    padding: 15px;
+    text-shadow: 0 0 5px #000;
+    text-decoration: none;
+    border-radius: 7px;
+    margin-bottom: 10px;
+  }
+.boton:hover{
+    background-color: #333;
+}
+.titulo{
+    font-family: cursive;
+    font-size: 25px;
+  }
+footer{
+    background-color: #7574742f;
+    padding: 15px;
+}
+footer p{
+    font-size: 20px;
+}
+footer .redes{
+    margin-top: 20px;
+}
+footer a{
+    color: rgba(233, 233, 8, 0.781);
+    letter-spacing: 15px;
+    font-size: 35px;
+}
+.subir{
+    background-color:rgba(233, 233, 8, 0.781);
+    color: white;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    box-shadow: 0 0 5px white;
+  }
+.mapa{
+    position: static right;
+    right: 100%;
+    bottom: 40px;
+    text-align: right;
+    margin-left: 700px;
+
 }
