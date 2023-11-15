@@ -1,37 +1,63 @@
-@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Playpen+Sans:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Playpen+Sans:wght@100&family=Ubuntu:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Playpen+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Playpen+Sans:wght@100&family=Ubuntu:wght@300&display=swap');
+
+
 /* font-family: 'Comic Neue', cursive;
 font-family: 'Playpen Sans', cursive; */
+// font-family: 'Comic Neue', cursive;
+// font-family: 'Playpen Sans', cursive;
+// font-family: 'Ubuntu', sans-serif;
+
 * {
   box-sizing: border-box;
-  margin: 0px;
+  margin: 0px
 }
+
+// paleta de colores
+
+$color1: #333;
+$color2: white;
+$color3: black;
+$color4: rgba(233, 233, 8, 0.781);
+
+// size
+$font-p: 1.8rem;
+$font-h1: 3.0rem;
+$font-h2: 20px;
+$font-nav: 30px;
+
+// font
+$fuente1: 'Playpen Sans', cursive;
+$fuente2: 'Ubuntu', sans-serif;
+$fuente3: 'Comic Neue', cursive;
 
 .navbar {
-  background-color: #333;
+    background-color: #333;
+  
+  .navbar .navbar-toggler {
+    font-size: 30px;
+    padding: 35px;
+    display: flex;
+  
+  .navbar .navbar-toggler .nav-link:hover {
+    background-color: #333;
+    position: left;
+    background-position: left;
+  
+  .navbar .navbar-toggler .nav-link:hover .nav-item {
+    text-align: left;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: cursive;
+    position: left;
+  }
 }
-.navbar .navbar .navbar-toggler {
-  font-size: 30px;
-  padding: 35px;
-  display: flex;
+  }
 }
-.navbar .navbar .navbar-toggler .navbar .navbar-toggler .nav-link:hover {
-  background-color: #333;
-  position: left;
-  background-position: left;
-}
-.navbar .navbar .navbar-toggler .navbar .navbar-toggler .nav-link:hover .navbar .navbar-toggler .nav-link:hover .nav-item {
-  text-align: left;
-  padding: 10px;
-  text-decoration: none;
-  font-size: 30px;
-  font-family: cursive;
-  position: left;
-}
-
 .titulo {
-  font-size: 30px;
-  color: white;
+  font-size: $font-nav;
+  color: $color2;
   text-decoration: none;
   font-family: cursive;
 }
@@ -42,14 +68,15 @@ html {
 
 .call {
   width: 100%;
-  background-color: white;
-  color: black;
+  background-color: $color2;
+  color: $color3;
   padding: 30px;
-  border: 5px solid white;
+  border: 5px solid $color2;
   border-radius: 10px;
-}
-.call a:hover {
-  background-color: #333;
+
+  a:hover {
+    background-color: $color1;
+  }
 }
 
 .pp {
@@ -58,49 +85,56 @@ html {
 
 .texto {
   margin-bottom: 20px;
+
   /* font-family:  font-family: 'Comic Neue', cursive; */
-  font-family: "Playpen Sans", cursive;
+  font-family: 'Playpen Sans', cursive;
 }
 
 .boton {
-  background-color: #333;
-  color: white;
+  background-color: $color1;
+  color: $color2;
   padding: 15px;
-  text-shadow: 0 0 5px black;
+  text-shadow: 0 0 5px $color3;
   text-decoration: none;
   border-radius: 7px;
   margin-bottom: 10px;
-}
-.boton:hover {
-  background-color: #333;
+
+  &:hover {
+    background-color: $color1;
+  }
 }
 
 .titulo {
   font-family: cursive;
-  font-size: 30px;
+  font-size: $font-nav;
 }
 
 footer {
-  background-color: #333;
+  background-color: $color1;
   padding: 15px;
+
+  p {
+    font-size: $font-h2;
+  
+
+  .redes {
+    margin-top: 35px;
+    color: $color3;
+    font-size: $font-h2;
+  
+
+  a {
+    color: #adacac;
+    letter-spacing: 15px;
+    font-size: $font-nav;
+  }
 }
-footer p {
-  font-size: 20px;
-}
-footer p .redes {
-  margin-top: 35px;
-  color: black;
-  font-size: 20px;
-}
-footer p .redes a {
-  color: #adacac;
-  letter-spacing: 15px;
-  font-size: 30px;
+  }
 }
 
 .subir {
-  background-color: rgba(233, 233, 8, 0.781);
-  color: white;
+  background-color: $color4;
+  color: $color2;
   height: 40px;
   width: 40px;
   position: fixed;
@@ -108,8 +142,8 @@ footer p .redes a {
   bottom: 40px;
   text-align: center;
   line-height: 40px;
-  font-size: 30px;
-  box-shadow: 0 0 5px white;
+  font-size: $font-nav;
+  box-shadow: 0 0 5px $color2;
 }
 
 /* .mapa{
@@ -120,14 +154,15 @@ footer p .redes a {
     margin-left: 700px;
 
 } */
+
 .cc {
   text-align: center;
-  background-color: white;
+  background-color: $color2;
 }
 
 .redes {
   text-align: center;
-  color: rgba(233, 233, 8, 0.781);
+  color: $color4;
   font-size: 30px;
 }
 
@@ -140,7 +175,7 @@ footer p .redes a {
 .contenedor {
   height: 700px;
   width: 100%;
-  background-color: #333;
+  background-color:$color1;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 300px);
@@ -150,16 +185,17 @@ footer p .redes a {
 }
 
 .item {
-  border: 3px solid white;
+  border: 3px solid $color2;
   border-radius: 10px;
   background-size: cover;
   background-position: center;
   padding: 10px;
-}
-.item:hover {
-  filter: grayscale(75%);
-  transform: scale(1.1);
-  transition: all 0.9s;
+
+  &:hover {
+    filter: grayscale(75%);
+    transform: scale(1.1);
+    transition: all 0.9s;
+  }
 }
 
 .item1 {
@@ -204,8 +240,9 @@ footer p .redes a {
 
 p {
   text-align: center;
-  font-size: 20px;
+  font-size: $font-h2;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
   /* background-color: aliceblue; */
   /* background-position: bottom; */
   /* border: 3px solid #333; */
@@ -215,73 +252,92 @@ p {
   .contenedor {
     grid-template-columns: 1fr 1fr 1fr !important;
   }
+
   .item1 {
-    grid-column: 1/3;
+    grid-column: 1 / 3;
     grid-row: 1/2;
   }
+
   .item2 {
     grid-column: 3/4;
     grid-row: 1/2;
   }
+
   .item3 {
     grid-column: 1/2;
     grid-row: 2/3;
   }
+
   .item4 {
     grid-column: 2/4;
     grid-row: 2/3;
   }
+
   .item5 {
     grid-column: 1/3;
     grid-row: 3/4;
   }
+
   .item6 {
     grid-column: 3/4;
     grid-row: 3/4;
   }
+
   .item7 {
     grid-column: 1/2;
     grid-row: 4/5;
   }
+
   .item8 {
     grid-column: 2/4;
     grid-row: 4/5;
   }
 }
+
 @media only screen and (min-width: 1024px) {
   .contenedor {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 200px 200px;
   }
 }
-.caja {
-  background-color: white;
-  padding: 30px;
-  text-align: center;
-  background-position: center;
-  position: relative;
-  box-sizing: border-box;
-}
-.caja h2 {
-  text-transform: uppercase;
-  font-family: "Playpen Sans", cursive;
-  color: #333;
-}
-.caja input:focus {
-  font-size: 1.8rem;
-  border: 5px dotted #333;
-  color: rgba(233, 233, 8, 0.781);
-  transition: all 2s;
-}
-.caja textarea {
-  font-size: 1.8rem;
-  border: 5px dotted #333;
-  color: rgba(233, 233, 8, 0.781);
-  transition: all 2s;
+
+// mixins
+
+@mixin caja (){
+    font-size: $font-p;
+    border: 5px dotted $color1;
+    color:rgba(233, 233, 8, 0.781);
+    transition: all 2s;
 }
 
-@media (max-width: 300px) {
-  .caja {
-    width: 100%;
-  }
-}/*# sourceMappingURL=estilos.css.map */
+.caja{
+    background-color: $color2;
+    padding: 30px;
+    text-align: center;
+    background-position: center;
+    position: relative;
+    box-sizing: border-box;
+
+
+    h2{
+        text-transform: uppercase;
+        font-family: $fuente1;
+        color: $color1;
+    }
+    // input{
+    //     transition: all 2s;
+    // }
+    input:focus{
+        @include caja;
+    }
+    textarea{
+        @include caja;
+
+    }
+    
+}
+@media (max-width: 300px){
+    .caja{
+        width: 100%;
+    }
+}
